@@ -16,3 +16,8 @@ def put_call_parity_residual(call_price, put_price, S, K, r, T, pv_div=0.0):
     residual = call_price - rhs
     return residual
 
+if __name__ == "__main__":
+    # quick demo
+    C, P = 2.5, 0.8
+    S, K, r, T = 100.0, 100.0, 0.01, 30/252
+    print("parity residual:", put_call_parity_residual(C, P, S, K, r, T))
