@@ -1,4 +1,3 @@
-Short description
 A compact simulator demonstrating delta-neutral options market-making (minute-level demo): theos/Greeks, parity checks, a small ML signal, quoting engine, execution simulation and hedging.
 
 How to run (local)
