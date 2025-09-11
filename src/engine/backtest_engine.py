@@ -76,7 +76,8 @@ def build_synthetic(n_minutes=800):
 
     # simple ML-ish score (normalized)
     ret_short = pd.Series(df['underlying']).pct_change().fillna(0).rolling(3, min_periods=1).mean().fillna(0)
-    res_z = (df['parity_residual'] - df['parity_residual'].median()) / (df['parity_residual'].mad() + 1e-9)
+    parity_residual_mad = (df['parity_residual'] - df['parity_residual'].mean()).abs().mean()
+    res_z = (df['parity_residual'] - df['parity_residual'].median()) / (parity_residual_mad + 1e-9)
     ml_raw = 0.7 * ret_short.values + 0.3 * (-res_z.values)
     df['ml_score'] = (ml_raw - np.mean(ml_raw)) / (np.std(ml_raw) + 1e-9)
 
