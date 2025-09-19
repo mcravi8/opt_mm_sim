@@ -1,0 +1,30 @@
+{
+  "net_pnl": 4581.557874592181,
+  "annualized_sharpe_est": 35.70543882335142,
+  "total_fills": 111,
+  "fill_rate": 0.2846153846153846,
+  "avg_inventory_contracts": 0.8333333333333334,
+  "hedge_error_rms": 0.0,
+  "max_drawdown": -3458.1161500059875,
+  "contract_mult": 100.0,
+  "opt_fee_per_contract": 0.65,
+  "hedge_fee_bps": 2.0,
+  "total_option_fees": 72.14999999999998,
+  "total_hedge_cost": 19.62030029296875,
+  "gross_pnl": 4673.32817488515,
+  "final_params": {
+    "k_widen_base": 0.02,
+    "k_widen_pos": 0.02,
+    "k_inv": 0.012,
+    "k_fill": 35.0,
+    "fill_bias": -0.02,
+    "skew": 0.0033354363399333165,
+    "hedge_every": 4,
+    "hedge_band_shares": 150.0,
+    "size_contracts": 1,
+    "pos_cap": 6,
+    "soft_cap_frac": 0.75,
+    "expo_widen_mult": 3.0,
+    "flat_tight_mult": 0.6
+  }
+}
